@@ -43,7 +43,7 @@ if shape.lower() == 'sphere':
     y = R_value * np.outer(np.sin(u), np.sin(v))
     z = R_value * np.outer(np.ones(np.size(u)), np.cos(v))
 
-    ax.plot_surface(x, y, z, color='b', alpha=0.5)
+    ax.plot_surface(x, y, z, color='dimgrey', alpha=0.5)
 
 elif shape.lower() == 'cylinder':
     # Input the height and base radius from the user
@@ -75,7 +75,7 @@ elif shape.lower() == 'cylinder':
     X = r_value * np.cos(U)
     Y = r_value * np.sin(U)
 
-    ax.plot_surface(X, Y, Z, color='r', alpha=0.5)
+    ax.plot_surface(X, Y, Z, color='dimgrey', alpha=0.5)
 
 elif shape.lower() == 'rectangular prism':
     # Input the dimensions from the user
@@ -106,8 +106,8 @@ elif shape.lower() == 'rectangular prism':
     X, Y = np.meshgrid(np.linspace(-a_value/2, a_value/2, 100), np.linspace(-b_value/2, b_value/2, 100))
     Z = np.ones_like(X) * (-c_value/2)
 
-    ax.plot_surface(X, Y, Z, color='g', alpha=0.5)
-    ax.plot_surface(X, Y, Z + c_value, color='g', alpha=0.5)
+    ax.plot_surface(X, Y, Z, color='dimgrey', alpha=0.5)
+    ax.plot_surface(X, Y, Z + c_value, color='dimgrey', alpha=0.5)
 
 else:
     print("Invalid shape chosen. Please choose either 'sphere', 'cylinder', or 'rectangular prism'.")
