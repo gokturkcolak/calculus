@@ -109,7 +109,6 @@ elif shape.lower() == 'rectangular prism':
     ax.plot_surface(X, Y, Z, color='g', alpha=0.5)
     ax.plot_surface(X, Y, Z + c_value, color='g', alpha=0.5)
 
-
 else:
     print("Invalid shape chosen. Please choose either 'sphere', 'cylinder', or 'rectangular prism'.")
 
