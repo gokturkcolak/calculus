@@ -54,7 +54,7 @@ ax.plot_surface(x_grid_inner, y_grid_inner, z_grid, alpha=0.7, rstride=5, cstrid
 ax.set_xlabel('X (cm)')
 ax.set_ylabel('Y (cm)')
 ax.set_zlabel('Z (cm)')
-ax.set_title('')
+ax.set_title('NIGGAS IN CYLINDERS')
 
 # Set axis limits
 ax.set_xlim([-R_outer, R_outer])
